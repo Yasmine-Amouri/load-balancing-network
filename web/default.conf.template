@@ -1,0 +1,25 @@
+js_import slow from /etc/nginx/njs/slow.js;
+
+server {
+    listen 80;
+    add_header X-Server ${SERVER_ID} always;
+
+    location = / {
+        default_type text/html;
+        return 200 "<!doctype html><html><body><h1>Servi par ${SERVER_ID}</h1></body></html>\n";
+    }
+
+    location = /health {
+        access_log off;
+        default_type text/plain;
+        return 200 "OK\n";
+    }
+
+    location = /slow {
+        js_content slow.slow;
+    }
+
+    location = /big.bin {
+        root /usr/share/nginx/html;
+    }
+}

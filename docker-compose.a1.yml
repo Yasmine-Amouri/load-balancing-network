@@ -1,0 +1,28 @@
+services:
+  web1:
+    build: ./web
+    image: lb-web:1
+    container_name: web1
+    environment:
+      SERVER_ID: web1
+    cpus: 0.5
+    mem_limit: 256m
+    networks:
+      net_front:
+        ipv4_address: 10.10.0.21
+
+  client:
+    build: ./client
+    image: lb-client:1
+    container_name: client
+    networks:
+      net_front:
+        ipv4_address: 10.10.0.50
+
+networks:
+  net_front:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.0.0/24
+          gateway: 10.10.0.1
