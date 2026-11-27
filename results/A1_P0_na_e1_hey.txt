@@ -1,0 +1,93 @@
+
+Summary:
+  Total:	120.0036 secs
+  Slowest:	0.0265 secs
+  Fastest:	0.0000 secs
+  Average:	0.0003 secs
+  Requests/sec:	4982.1905
+  
+  Total data:	38693655 bytes
+  Size/request:	65 bytes
+
+Response time histogram:
+  0.000 [1]	|
+  0.003 [595209]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.005 [20]	|
+  0.008 [14]	|
+  0.011 [0]	|
+  0.013 [11]	|
+  0.016 [0]	|
+  0.019 [14]	|
+  0.021 [0]	|
+  0.024 [11]	|
+  0.027 [7]	|
+
+
+Latency distribution:
+  10% in 0.0001 secs
+  25% in 0.0002 secs
+  50% in 0.0002 secs
+  75% in 0.0003 secs
+  90% in 0.0004 secs
+  95% in 0.0005 secs
+  99% in 0.0007 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0000 secs, 0.0265 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0024 secs
+  resp wait:	0.0002 secs, 0.0000 secs, 0.0265 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0026 secs
+
+Status code distribution:
+  [200]	595287 responses
+
+Error distribution:
+  [100]	Get "http://10.10.0.21/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  [2150]	Get "http://10.10.0.21/": dial tcp 10.10.0.21:80: connect: connection refused
+  [300]	Get "http://10.10.0.21/": dial tcp 10.10.0.21:80: connect: no route to host
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45562->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45584->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45592->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45594->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45604->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45618->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45630->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45638->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45654->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45660->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45662->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45688->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45698->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45702->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45716->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45718->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45728->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45740->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45744->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45746->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45760->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45768->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45774->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45780->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45794->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45800->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45816->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45832->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45846->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45856->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45864->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45880->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45882->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45906->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45910->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45924->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45932->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45936->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45946->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45952->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45954->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45982->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:45986->10.10.0.21:80: read: connection reset by peer
+  [1]	Get "http://10.10.0.21/": read tcp 10.10.0.50:46000->10.10.0.21:80: read: connection reset by peer
+
